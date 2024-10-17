@@ -1,30 +1,77 @@
-/* SINGLE EVENTS TEMPLATE */
-#single-post-events {
+.wrapper-margin {
   margin: 70px 0 60px;
 }
 
-#single-post-events .post-header {
+.btn-gtc {
+  color: #efecdf;
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  line-height: 18px;
+  padding: 18px 36px;
+  text-align: center;
+  border-radius: 50px;
+  background: #474fa8;
+  border: 1px solid #474fa8;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-gtc:hover {
+  background: #f52436;
+  border-color: #f52436;
+  text-decoration: none;
+}
+
+.btn-gtc .btn-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  display: inline-block;
+  background-size: cover;
+}
+
+/* SINGLE EVENTS TEMPLATE */
+.wrapper-margin .post-content {
+  margin: 75px 0;
+}
+
+.wrapper-header {
   min-height: 400px;
   color: #ffffff;
   background-color: #521f0c;
   background: linear-gradient(236deg, rgba(82, 31, 12, 1) 0%, rgba(169, 51, 8, 1) 49%, rgba(71, 79, 168, 1) 100%);
 }
 
-#single-post-events .post-header .orbit-thumbnail-bg {
+.wrapper-header .orbit-thumbnail-bg {
   display: none;
   min-height: 400px;
 }
 
-#single-post-events .post-content {
-  margin: 75px 0;
-}
-
-#single-post-events .post-meta {
+.wrapper-header .post-meta {
   padding: 60px 0;
 }
 
-#single-post-events .post-excerpt {
+.wrapper-header .post-excerpt {
   padding-top: 30px;
+}
+
+/* EXPLAINERS TEMPLATE */
+#single-post-explainers .post-title::after {
+  content: "";
+  height: 2px;
+  width: 200px;
+  display: block;
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+
+#single-post-explainers .post-excerpt {
+  font-style: italic;
+}
+
+#single-post-explainers .btn-gtc {
+  margin-top: 30px;
 }
 
 .related-posts .headline {
