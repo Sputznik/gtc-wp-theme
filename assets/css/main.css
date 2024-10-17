@@ -57,21 +57,24 @@
 }
 
 /* EXPLAINERS TEMPLATE */
-#single-post-explainers .post-title::after {
-  content: "";
-  height: 2px;
-  width: 200px;
-  display: block;
-  margin-top: 30px;
-  background-color: #ffffff;
+#post-explainers-spotlight .subtitle {
+  font-size: 24px;
 }
 
-#single-post-explainers .post-excerpt {
+#post-explainers-spotlight .post-excerpt {
   font-style: italic;
 }
 
-#single-post-explainers .btn-gtc {
+#post-explainers-spotlight .btn-gtc {
   margin-top: 30px;
+}
+
+#post-explainers-spotlight .btn-gtc-download {
+  margin-right: 20px;
+}
+
+#post-explainers-spotlight .wrapper-header .orbit-thumbnail-bg {
+  display: block;
 }
 
 .related-posts .headline {
@@ -124,5 +127,11 @@
 @media(min-width: 768px){
   #single-post-events .post-header .orbit-thumbnail-bg {
     display: block;
+  }
+}
+
+@media( max-width: 768px ){
+  #post-explainers-spotlight .orbit-thumbnail-bg {
+    margin-bottom: 30px;
   }
 }
