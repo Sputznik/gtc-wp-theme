@@ -1,0 +1,38 @@
+/* ORBIT TEMPLATES */
+.articles-three-grid {
+  grid-row-gap: 30px;
+}
+
+.articles-three-grid .orbit-thumbnail-bg {
+  min-height: 240px;
+}
+
+.articles-three-grid .post-categories {
+  margin: 30px 0;
+}
+
+.articles-three-grid .post-categories a {
+  color: #a93308;
+}
+
+.articles-three-grid .post-title {
+  font-size: 30px;
+  margin: 0 0 30px;
+}
+
+.articles-three-grid .post-title:hover {
+  color: #f41124;
+}
+
+.articles-three-grid .post-excerpt * {
+  display: inline;
+}
+
+.articles-three-grid .post-excerpt {
+  margin-bottom: 10px;
+}
+
+.articles-three-grid .read-more {
+  color: #474fa8;
+  font-weight: 700;
+}
