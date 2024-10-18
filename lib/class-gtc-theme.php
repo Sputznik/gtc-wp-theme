@@ -9,6 +9,12 @@ class GTC_THEME {
 
     add_action( 'wp_enqueue_scripts', array( $this, 'assets' ) );  // LOAD ASSETS
 
+    /* ADD SOW FROM THE THEME */
+    add_action('siteorigin_widgets_widget_folders', function( $folders ){
+      $folders[] = GTC_THEME_PATH.'/so-widgets/';
+      return $folders;
+    } );
+
   }
 
   function assets() {
