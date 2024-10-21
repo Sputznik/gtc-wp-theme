@@ -17,10 +17,10 @@ $event_recording_url = $instance['event_recording_url'];
       <div class="event-convenors">
         <h3 class="title">Convenors</h3>
         <div class="logos">
-          <?php foreach( $convenors as $item ): ?>
+          <?php foreach( $convenors as $item ): $title = get_the_title( $item['site_logo'] ); ?>
             <div class="logo-wrapper">
-              <a href="<?php _e( $item['site_url'] ); ?>">
-                <?php echo wp_get_attachment_image( $item['site_logo'] ); ?>
+              <a href="<?php _e( $item['site_url'] ); ?>" title="<?php _e( $title ); ?>">
+                <?php echo wp_get_attachment_image( $item['site_logo'], "thumbnail", "", array( "alt" => $title ) ); ?>
               </a>
             </div>
           <?php endforeach;?>
