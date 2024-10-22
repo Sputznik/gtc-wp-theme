@@ -227,8 +227,29 @@ blockquote::after {
   padding-bottom: 30px;
 }
 
-.gtc-explainers-content a {
+.gtc-explainers-content a,
+.gtc-explainers-accordion a {
   color: #474fa8;
+}
+
+.gtc-explainers-accordion .sow-accordion-panel-header {
+  padding: 30px !important;
+  color: #521f0c !important;
+  font-size: 30px !important;
+  border-bottom: 1px solid #521f0c;
+  background-color: transparent !important;
+}
+
+.gtc-explainers-accordion .sow-accordion-panel-header:hover,
+.gtc-explainers-accordion .sow-accordion-panel-open .sow-accordion-panel-header {
+  color: #a93308 !important;
+}
+
+.gtc-explainers-accordion .sow-accordion-panel-border {
+  color: #000000;
+  font-size: 20px;
+  border: 1px solid #e5e2d5;
+  padding: 30px !important;
 }
 
 /* -------------------------- MEDIA QUERIES ------------------------- */
