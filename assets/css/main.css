@@ -1,3 +1,40 @@
+blockquote {
+  border: 0;
+  float: right;
+  padding: 45px;
+  max-width: 45%;
+  color: #efecdf;
+  font-weight: bold;
+  font-style: italic;
+  position: relative;
+  font-size: 1.15em;
+  line-height: 1.5em;
+  background: #474fa8;
+  margin: 30px 0px 30px 30px;
+  border-radius: 30px 30px 0px 30px;
+}
+
+blockquote::after,
+blockquote::before {
+  opacity: 0.5;
+  width: 10%;
+  font-size: 80px;
+  position: absolute;
+  font-family: "Quicksand";
+}
+
+blockquote::before {
+  content: "\201C";
+  left: 0;
+  top: 35px;
+}
+
+blockquote::after {
+  content: "\201D";
+  bottom: 0;
+  right: 5px;
+}
+
 .wrapper-margin {
   margin: 70px 0 60px;
 }
