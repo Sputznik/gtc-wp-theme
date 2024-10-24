@@ -60,7 +60,8 @@ blockquote::after {
   text-decoration: none;
 }
 
-.btn-gtc .btn-icon {
+.btn-gtc .btn-icon,
+.gtc-load-more .btn-gtc::before {
   width: 24px;
   height: 24px;
   margin-right: 10px;
@@ -171,6 +172,16 @@ blockquote::after {
 .articles-three-grid .read-more {
   color: #474fa8;
   font-weight: 700;
+}
+
+.gtc-load-more {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.gtc-load-more .btn-gtc:hover {
+  border-color: #64260f;
+  background-color: #64260f;
 }
 
 /* SOW */
