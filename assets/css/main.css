@@ -68,6 +68,21 @@ blockquote::after {
   background-size: cover;
 }
 
+.gtc-post-header-bg {
+  background-color: #521f0c;
+  background: linear-gradient(236deg, rgba(82, 31, 12, 1) 0%, rgba(169, 51, 8, 1) 49%, rgba(71, 79, 168, 1) 100%);
+}
+
+.gtc-page-header-bg {
+  background-color: #521f0c;
+  background: linear-gradient(325deg, rgba(82, 31, 12, 1) 0%, rgba(169, 51, 8, 1) 59%, rgba(71, 79, 168, 1) 100%);
+}
+
+.gtc-homepage-header-bg {
+  background-color: #a93308;
+  background: linear-gradient(117deg, rgba(71, 79, 168, 1) 0%, rgba(169, 51, 8, 1) 69%, rgba(82, 31, 12, 1) 100%);
+}
+
 /* SINGLE EVENTS TEMPLATE */
 .wrapper-margin .post-content {
   margin: 75px 0;
@@ -76,8 +91,6 @@ blockquote::after {
 .wrapper-header {
   min-height: 400px;
   color: #ffffff;
-  background-color: #521f0c;
-  background: linear-gradient(236deg, rgba(82, 31, 12, 1) 0%, rgba(169, 51, 8, 1) 49%, rgba(71, 79, 168, 1) 100%);
 }
 
 .wrapper-header .orbit-thumbnail-bg {

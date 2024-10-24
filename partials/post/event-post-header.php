@@ -1,7 +1,7 @@
 <?php
   $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0];
 ?>
-<div class="post-header wrapper-header">
+<div class="post-header wrapper-header gtc-post-header-bg">
   <div class="container">
     <div class="row">
       <div class="col-sm-7">
