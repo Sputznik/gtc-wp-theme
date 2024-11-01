@@ -41,12 +41,12 @@ blockquote::after {
 
 .btn-gtc {
   color: #efecdf;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   line-height: 18px;
-  padding: 18px 36px;
+  padding: 12px 24px;
   text-align: center;
   border-radius: 50px;
   background: #474fa8;
@@ -116,7 +116,8 @@ blockquote::after {
   font-style: italic;
 }
 
-#post-explainers-spotlight .btn-gtc {
+#post-explainers-spotlight .btn-gtc,
+#gtc-single-post .btn-gtc {
   margin-top: 30px;
 }
 
@@ -133,6 +134,12 @@ blockquote::after {
   margin: 0 0 30px;
   padding-top: 60px;
   border-top: 3px dotted #a93308;
+}
+
+/* SINGLE POST */
+#gtc-single-post.wrapper-margin .post-content {
+  margin: 105px auto;
+  max-width: 860px;
 }
 
 /* ORBIT TEMPLATES */
@@ -278,8 +285,14 @@ blockquote::after {
 
 /* -------------------------- MEDIA QUERIES ------------------------- */
 @media(min-width: 768px){
-  #single-post-events .post-header .orbit-thumbnail-bg {
+  #single-post-events .post-header .orbit-thumbnail-bg,
+  #gtc-single-post .post-header .orbit-thumbnail-bg {
     display: block;
+  }
+
+  .btn-gtc {
+    font-size: 18px;
+    padding: 18px 36px;
   }
 }
 
