@@ -118,6 +118,7 @@ blockquote::after {
 
 #post-explainers-spotlight .wrapper-header .orbit-thumbnail-bg {
   display: block;
+  min-height: 450px;
 }
 
 .related-posts .headline {
@@ -158,7 +159,7 @@ blockquote::after {
 }
 
 .archive.category .articles-three-grid .post-title {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .archive.category .post-categories {
@@ -167,7 +168,7 @@ blockquote::after {
 
 /* ORBIT TEMPLATES */
 .articles-three-grid {
-  grid-row-gap: 30px;
+  grid-row-gap: 45px;
 }
 
 .articles-three-grid .orbit-thumbnail-bg {
@@ -175,7 +176,7 @@ blockquote::after {
 }
 
 .articles-three-grid .post-categories {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .articles-three-grid .post-categories a {
@@ -184,7 +185,7 @@ blockquote::after {
 
 .articles-three-grid .post-title {
   font-size: 30px;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
 }
 
 .articles-three-grid .post-title:hover {
@@ -202,6 +203,10 @@ blockquote::after {
 .articles-three-grid .read-more {
   color: #474fa8;
   font-weight: 700;
+}
+
+.articles-three-grid .meta {
+  font-size: 16px;
 }
 
 .gtc-load-more {
@@ -225,8 +230,8 @@ blockquote::after {
   margin: 0 0 20px;
 }
 
-.gtc-events-content .event-convenors {
-  margin-top: 30px;
+.gtc-events-content .event-recording {
+  margin-bottom:30px;
 }
 
 .gtc-events-content .event-convenors .logos,
@@ -304,6 +309,12 @@ blockquote::after {
   font-size: 20px;
   border: 1px solid #e5e2d5;
   padding: 30px !important;
+}
+
+h3.post-title a,
+.articles-three-grid .orbit-thumbnail-bg a {
+  color: black;
+  border: none;
 }
 
 /* -------------------------- MEDIA QUERIES ------------------------- */
