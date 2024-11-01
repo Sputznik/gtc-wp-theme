@@ -142,6 +142,31 @@ blockquote::after {
   max-width: 860px;
 }
 
+/* ARCHIVE */
+.archive-header {
+  color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.archive-header .page-title {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.4;
+}
+
+.archive .articles-post-list-wrap {
+  margin-bottom: 60px
+}
+
+.archive.category .articles-three-grid .post-title {
+  margin-top: 30px;
+}
+
+.archive.category .post-categories {
+  display: none;
+}
+
 /* ORBIT TEMPLATES */
 .articles-three-grid {
   grid-row-gap: 30px;
