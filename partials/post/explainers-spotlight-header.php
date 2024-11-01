@@ -18,17 +18,21 @@ $asterisk_url = GTC_THEME_URI.'/assets/images/asterisk.png';
           <div class="post-excerpt">
             <?php the_excerpt(); ?>
           </div>
-          <?php if( $pdf_url ): ?>
-            <a href="<?php _e( $pdf_url ); ?>" class="btn-gtc btn-gtc-download" download>
-              <span class="btn-icon" style="background-image: url(<?php _e($asterisk_url); ?>);"></span>
-              DOWNLOAD PDF VERSION
-            </a>
-          <?php endif; ?>
-          <?php if( $external_url ): ?>
-            <a href="<?php _e( $external_url ); ?>" class="btn-gtc">
-              <span class="btn-icon" style="background-image: url(<?php _e($asterisk_url); ?>);"></span>
-              VISIT WEBSITE
-            </a>
+          <?php if( $pdf_url || $external_url ): ?>
+            <div class="header-actions">
+              <?php if( $pdf_url ): ?>
+                <a href="<?php _e( $pdf_url ); ?>" class="btn-gtc btn-gtc-download" download>
+                  <span class="btn-icon" style="background-image: url(<?php _e($asterisk_url); ?>);"></span>
+                  DOWNLOAD PDF VERSION
+                </a>
+              <?php endif; ?>
+              <?php if( $external_url ): ?>
+                <a href="<?php _e( $external_url ); ?>" class="btn-gtc">
+                  <span class="btn-icon" style="background-image: url(<?php _e($asterisk_url); ?>);"></span>
+                  VISIT WEBSITE
+                </a>
+              <?php endif; ?>
+            </div>
           <?php endif; ?>
         </div>
       </div>

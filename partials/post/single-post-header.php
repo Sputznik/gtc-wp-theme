@@ -13,10 +13,12 @@ $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'f
             <?php the_excerpt(); ?>
           </div>
           <?php if( $pdf_url ): ?>
-            <a href="<?php _e( $pdf_url ); ?>" class="btn-gtc btn-gtc-download" download>
-              <span class="btn-icon" style="background-image: url(<?php _e(GTC_THEME_URI.'/assets/images/asterisk.png'); ?>);"></span>
-              DOWNLOAD PDF VERSION
-            </a>
+            <div class="header-actions">
+              <a href="<?php _e( $pdf_url ); ?>" class="btn-gtc btn-gtc-download" download>
+                <span class="btn-icon" style="background-image: url(<?php _e(GTC_THEME_URI.'/assets/images/asterisk.png'); ?>);"></span>
+                DOWNLOAD PDF VERSION
+              </a>
+            </div>
           <?php endif; ?>
         </div>
       </div>

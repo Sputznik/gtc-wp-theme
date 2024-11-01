@@ -116,15 +116,6 @@ blockquote::after {
   font-style: italic;
 }
 
-#post-explainers-spotlight .btn-gtc,
-#gtc-single-post .btn-gtc {
-  margin-top: 30px;
-}
-
-#post-explainers-spotlight .btn-gtc-download {
-  margin-right: 20px;
-}
-
 #post-explainers-spotlight .wrapper-header .orbit-thumbnail-bg {
   display: block;
 }
@@ -140,6 +131,13 @@ blockquote::after {
 #gtc-single-post.wrapper-margin .post-content {
   margin: 105px auto;
   max-width: 860px;
+}
+
+.post-header .header-actions {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 /* ARCHIVE */
