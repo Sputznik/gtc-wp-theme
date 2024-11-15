@@ -189,6 +189,14 @@ blockquote::after {
   max-width: 1px;
 }
 
+.articles-three-grid .post-status {
+  position: absolute;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 2px 8px;
+  background: #474fa8;
+}
+
 .articles-three-grid .post-categories {
   margin: 20px 0;
 }

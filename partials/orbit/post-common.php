@@ -5,6 +5,9 @@
   $background_img = !empty( $thumbnail ) ? 'style="background-image:url('.$thumbnail.');"' : "";
 ?>
 <div class="orbit-thumbnail-bg" <?php _e( $background_img ); ?>>
+  <?php if( $post->post_status == 'future' ): ?>
+    <div class="post-status">Upcoming</div>
+  <?php endif; ?>
   <?php if( !empty( $thumbnail ) ): $thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true ); ?>
     <img src="<?php _e( $thumbnail ); ?>" alt="<?php _e( $thumbnail_alt ? $thumbnail_alt : 'Featured Image' ); ?>" class="screen-reader-featured-img" />
   <?php endif;?>
