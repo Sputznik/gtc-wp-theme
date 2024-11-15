@@ -1,6 +1,5 @@
 <?php
 $pdf_url   =  get_post_meta( $post->ID, 'pdf_link', true );
-$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0];
 ?>
 <div class="post-header wrapper-header gtc-post-header-bg">
   <div class="container">
@@ -23,9 +22,7 @@ $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'f
         </div>
       </div>
       <div class="col-sm-5">
-        <?php if( !empty( $thumbnail ) ): ?>
-          <div class="orbit-thumbnail-bg" style="background-image: url( <?php _e( $thumbnail );?> );"></div>
-        <?php endif; ?>
+        <?php get_template_part( 'partials/post/featured-image' ); ?>
       </div>
     </div>
   </div>

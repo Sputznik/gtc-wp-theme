@@ -84,6 +84,15 @@ blockquote::after {
   background: linear-gradient(117deg, rgba(71, 79, 168, 1) 0%, rgba(169, 51, 8, 1) 69%, rgba(82, 31, 12, 1) 100%);
 }
 
+.screen-reader-featured-img {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  max-width: 1px;
+  max-height: 1px;
+}
+
 /* SINGLE EVENTS TEMPLATE */
 .wrapper-margin .post-content {
   margin: 75px 0;
@@ -173,6 +182,11 @@ blockquote::after {
 
 .articles-three-grid .orbit-thumbnail-bg {
   min-height: 240px;
+}
+
+.articles-three-grid .screen-reader-featured-img {
+  height: 1px;
+  max-width: 1px;
 }
 
 .articles-three-grid .post-categories {

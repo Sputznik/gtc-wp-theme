@@ -1,9 +1,15 @@
 <?php
   $permalink      = get_the_permalink();
-  $thumbnail      = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0];
+  $thumbnail_id   = get_post_thumbnail_id( $post->ID );
+  $thumbnail      = wp_get_attachment_image_src( $thumbnail_id, 'full' )[0];
   $background_img = !empty( $thumbnail ) ? 'style="background-image:url('.$thumbnail.');"' : "";
 ?>
-<div class="orbit-thumbnail-bg" <?php _e( $background_img ); ?>><a href="<?php _e( $permalink );?>"></a></div>
+<div class="orbit-thumbnail-bg" <?php _e( $background_img ); ?>>
+  <?php if( !empty( $thumbnail ) ): $thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true ); ?>
+    <img src="<?php _e( $thumbnail ); ?>" alt="<?php _e( $thumbnail_alt ? $thumbnail_alt : 'Featured Image' ); ?>" class="screen-reader-featured-img" />
+  <?php endif;?>
+  <a href="<?php _e( $permalink );?>"></a>
+</div>
 <div class="post-desc">
   <div class="post-categories"><?php the_category(', '); ?></div>
   <h3 class="post-title"><a href="<?php _e( $permalink );?>"><?php the_title();?></a></h3>
