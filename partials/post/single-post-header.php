@@ -3,6 +3,7 @@
   $pdf_url_button_text =  get_post_meta( $post->ID, 'pdf_link_button_text', true );
   $external_url =  get_post_meta( $post->ID, 'external_link', true );
   $external_url_button_text =  get_post_meta( $post->ID, 'external_link_button_text', true );
+  $asterisk_url = GTC_THEME_URI . '/assets/images/asterisk.png';
 ?>
 <div class="post-header wrapper-header gtc-post-header-bg">
   <div class="container">
